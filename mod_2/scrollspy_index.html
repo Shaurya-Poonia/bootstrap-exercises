@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scrollspy</title>
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			
+			<div class="col-lg-6">
+				<!--tabs-->
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="active"><a href="#tab1" role="tab" data-toggle="tab">tab1</a></li>
+					<li><a href="#tab2" role="tab" data-toggle="tab">tab2</a></li>
+					<li><a href="#tab3" role="tab" data-toggle="tab">tab3</a></li>
+				</ul>
+			
+				<!--tab content-->
+				<div class="tab-content">
+					<div class=" active tab-pane fade in" id="tab1">Tab1</div>
+					<div class="tab-pane fade" id="tab2">Tab2</div>
+					<div class="tab-pane fade" id="tab3">Tab3</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<nav class="navbar navbar-default navbar-static" role="navigation" id="navbar-spy">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#scroll-first">first</a></li>
+						<li ><a href="#scroll-second">second</a></li>
+					</ul>
+				</nav>
+
+				<div data-target="#navbar-spy" data-spy="scroll" style="height:150px; overflow-y:scroll; position:relative;">
+					<div id="scroll-first">
+						<p>In the first paragraph of our experiment to scrollspy</p>
+					</div>
+					<div id="scroll-second">
+						<p>second paragraph of scroll spy. </p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<script src="./scripts/jquery-2.1.4.min.js"></script>
+	<script src="./scripts/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+	<head>
+
+	<link rel="stylesheet" href="./styles/bootstrap.min.css">
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+		<!-- content of header bas -->
+		<div class="navbar-header">
+			<a href="/index.html" class="navbar-brand">Brand</a>
+			
+		<!-- in place of pull-right we could use navbar-right also 
+			pull-right shifts the whole div towards right and 
+			text-right shifts the text inside div towards right-->
+			
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger-navigation">
+				<span class="sr-only">Navigation toggle</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+		</div>
+		
+		<div class="collapse navbar-collapse" id="hamburger-navigation">				
+
+			<div class="navbar-text navbar-right">
+				<a href="/index.html" class="navbar-link">Follow us</a>
+			</div>
+
+			<ul class="nav navbar-nav" role="menu">
+				<li><a href="#" class="active">Current Page<span class="sr-only">current</span></a>
+				<li><a href="#">link</a></li>
+
+				<!--dropdown list creation-->
+				<li class="dropdown">
+					<a class="dropdown-toggle" role="button" data-toggle="dropdown">Dropdown<span class="caret" />
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Option one</a></li>
+						<li><a href="#">Option two</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</div>
+
+		</div>
+		</nav>
+
+		
+		<script src="./scripts/jquery-2.1.4.min.js"></script>
+		<script src="./scripts/bootstrap.min.js"></script>
+
+
+	</body>
+</html>
+
+

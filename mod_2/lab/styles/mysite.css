@@ -1,0 +1,12 @@
+body {
+	padding-top: 15px;
+}
+
+.panel-default>.panel-heading {
+	padding: 5px;
+	background-color: #777;
+}
+
+.panel-body {
+	background-color: #ddd;
+}
