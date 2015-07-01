@@ -1,1 +1,0 @@
-# bootstrap exercise 1
