@@ -1,0 +1,50 @@
+<html>
+	<head>
+
+	<link rel="stylesheet" href="./styles/bootstrap.min.css">
+	</head>
+
+	<body>
+
+		<div class="container ">
+
+			<!--dialog box launch button-->
+			<div class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-offset-md-3 col-offset-sm-3 col-xs-offset-3">
+				<a class="btn btn-success" data-toggle="modal" href='#modal-id'>Open dialog</a>
+			</div>
+			
+			<!--dialog box modal-->
+			<div class="modal fade" id="modal-id">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						
+						<!--dialog box header-->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title">Are you sure?</h4>
+						</div>
+						
+						<!--dialog box body-->
+						<div class="modal-body">
+							Are you sure you wish to submit this album?
+						</div>
+						
+						<!--dialog box footer-->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Confirm</button>
+						</div>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+
+		</div>
+
+		<!--required jquery and bootstrap scripts-->
+		<script src="./scripts/jquery-2.1.4.min.js"></script>
+		<script src="./scripts/bootstrap.min.js"></script>
+	</body>
+</html>
